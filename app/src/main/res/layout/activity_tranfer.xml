@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Tranfer">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="16dp"
+            android:padding="10dp"
+            android:src="@drawable/cis"></ImageView>
+    </RelativeLayout>
+
+
+<!--    <RelativeLayout-->
+<!--        android:layout_width="220dp"-->
+<!--        android:layout_height="480dp"-->
+<!--        android:background="@drawable/background_rounded"-->
+
+<!--        tools:layout_editor_absoluteX="236dp"-->
+<!--        tools:layout_editor_absoluteY="124dp" />-->
+
+    <LinearLayout
+        android:id="@+id/loginpanel"
+        android:layout_width="338dp"
+        android:layout_height="380dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="248dp"
+        android:background="@drawable/edit_text_bg"
+        android:orientation="vertical"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="70dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingTop="10dp"
+            android:text="Account :"
+            android:textSize="22dp"
+            android:paddingBottom="10dp"
+
+            >
+        </TextView>
+
+
+        <EditText
+            android:id="@+id/tf_accountQR"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/edit_text_bg"
+
+            android:drawableRight="@drawable/ic_cart"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+
+            android:textSize="22dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="Value :"
+            android:textSize="22dp"
+            >
+        </TextView>
+
+
+        <EditText
+            android:id="@+id/tf_valueQR"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/edit_text_bg"
+            android:drawableRight="@drawable/ic_cart"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textSize="22dp"
+            android:inputType="number"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_doneQR"
+        android:layout_width="170dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="-27dp"
+        android:onClick="TransfersFunction"
+        android:text="TRANFER"
+        android:textColor="@color/white"
+        android:textSize="22dp"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/loginpanel"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <!--    <Button-->
+<!--        android:id="@+id/button4"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="168dp"-->
+<!--        android:backgroundTint="#F44336"-->
+<!--        android:text="Tranfer"-->
+<!--        android:textSize="16sp"-->
+<!--        app:cornerRadius="20dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3"-->
+<!--        app:layout_constraintWidth_percent=".8" />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/editTextTextPersonName3"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="28dp"-->
+<!--        android:background="@drawable/edit_text_bg"-->
+<!--        android:ems="10"-->
+<!--        android:hint="Value"-->
+<!--        android:inputType="textPersonName"-->
+<!--        android:minHeight="48dp"-->
+<!--        android:paddingBottom="10dp"-->
+<!--        android:paddingLeft="20dp"-->
+
+<!--        android:paddingTop="10dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.493"-->
+
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2"-->
+<!--        app:layout_constraintWidth_percent=".8" />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/editTextTextPersonName2"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="124dp"-->
+<!--        android:background="@drawable/edit_text_bg"-->
+<!--        android:ems="10"-->
+<!--        android:hint="Account ID"-->
+<!--        android:inputType="textPersonName"-->
+<!--        android:minHeight="48dp"-->
+<!--        android:paddingBottom="10dp"-->
+<!--        android:paddingLeft="20dp"-->
+<!--        android:paddingTop="10dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+
+<!--        app:layout_constraintHorizontal_bias="0.493"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintWidth_percent=".8" />-->
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

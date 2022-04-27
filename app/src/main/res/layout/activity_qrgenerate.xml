@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".QRGENERATE">
+
+    <Button
+        android:id="@+id/generateBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="159dp"
+        android:layout_marginStart="158dp"
+        android:layout_marginTop="184dp"
+        android:text="Generate"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/qrInput" />
+
+    <Button
+        android:id="@+id/scanBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="88dp"
+        android:layout_marginEnd="153dp"
+        android:layout_marginStart="164dp"
+        android:onClick="onClickScan"
+        android:text="Scan"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.392"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/qrInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="101dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="62dp"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="value"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+<!--    <ImageView-->
+<!--        android:id="@+id/qrPlaceHolder"-->
+<!--        android:layout_width="302dp"-->
+<!--        android:layout_height="337dp"-->
+<!--        android:layout_marginEnd="69dp"-->
+<!--        android:layout_marginStart="69dp"-->
+<!--        android:layout_marginTop="200dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/generateBtn"-->
+<!--        app:srcCompat="@drawable/qrscan" />-->
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="-2dp"
+            android:layout_marginTop="15dp"
+            android:padding="10dp"
+            android:src="@drawable/cis"></ImageView>
+    </RelativeLayout>
+
+
+    <!--    <RelativeLayout-->
+    <!--        android:layout_width="220dp"-->
+    <!--        android:layout_height="480dp"-->
+    <!--        android:background="@drawable/background_rounded"-->
+
+    <!--        tools:layout_editor_absoluteX="236dp"-->
+    <!--        tools:layout_editor_absoluteY="124dp" />-->
+
+    <LinearLayout
+        android:id="@+id/loginpanel"
+        android:layout_width="349dp"
+        android:layout_height="457dp"
+        android:layout_marginStart="28dp"
+        android:background="@drawable/edit_text_bg"
+        android:orientation="vertical"
+        android:paddingLeft="30dp"
+        android:paddingTop="70dp"
+        android:paddingRight="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header">
+
+        <ImageView
+            android:id="@+id/qrPlaceHolder"
+            android:layout_width="302dp"
+            android:layout_height="337dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/generateBtn"
+            app:srcCompat="@drawable/qrscan" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/logintranferbutton"
+        android:layout_width="170dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="-27dp"
+        android:text="DONE"
+        android:textColor="@color/white"
+        android:textSize="22dp"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/loginpanel"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
